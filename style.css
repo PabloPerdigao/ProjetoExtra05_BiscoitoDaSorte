@@ -1,11 +1,93 @@
 /* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+  font-size: 62.5%;
 }
 
-/** Configuração do body */
-body {
-  background: linear-gradient(12.3rem,#190361 0%,#BB00FF 100%);
-}
+/* Configuração do body */
+  body {
+    background: linear-gradient(120deg, #190361 0%, #BB00FF 100%);
+    background-attachment: fixed;
+    font-size: 1.6rem;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+
+  .hide {
+    display: none;
+  }
+  /* c*/
+  main {
+    background: white;
+
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 80%);
+    border-radius: .6rem;
+    
+    width: min( 42.8rem, 90%);
+
+    margin-top: 16rem;
+    
+    text-align: center;
+    
+  }
+
+/* configuração screen 1 */
+  h1 {
+    margin-bottom: 1.4rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+  }
+
+  img {
+    margin-top: 2rem;
+  }
+
+/* configuração screen 2*/
+
+  h2 {
+    font-weight: 700;
+    font-size: 2.4rem;
+  }
+
+  .screen2 p {
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-size: 2.4rem;
+    
+    background-color: #E4EDF1;
+    color: black;
+    
+    padding: 1rem;
+  }
+  
+  button {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+
+    background: #FF9500;
+    color: white;
+    border: none;
+    border-radius: 4px;
+
+    margin-top:1.7rem;
+    padding: 1.6rem;
+    
+  }
+
