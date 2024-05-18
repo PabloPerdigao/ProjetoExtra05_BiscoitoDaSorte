@@ -13,7 +13,7 @@
   body {
     background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
     background-attachment: fixed;
-		animation: gradient 7s ease infinite;
+		animation: gradient 5s ease infinite;
     background-size: 200% 200%;
     
     font-size: 1.6rem;
@@ -87,7 +87,7 @@
     }
     
     .screen1 img:hover {
-      animation: shakeAndSwing 0.5s infinite;
+      animation: shakeAndSwing 0.7s infinite;
     }
     
     /* configuração screen 2*/
@@ -95,7 +95,7 @@
     .hide {
       display: none;
     }
-    
+
     .screen2 {
       padding: 4.8rem 6.4rem 4.8rem 6.4rem;
     }
