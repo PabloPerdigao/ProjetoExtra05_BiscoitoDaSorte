@@ -11,83 +11,152 @@
 
 /* Configuração do body */
   body {
-    background: linear-gradient(120deg, #190361 0%, #BB00FF 100%);
+    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
     background-attachment: fixed;
+		animation: gradient 7s ease infinite;
+    background-size: 200% 200%;
+    
     font-size: 1.6rem;
-
+    
     display: grid;
     place-items: center;
     height: 100vh;
+    
   }
+
+  /* animação do background */
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
 
   .hide {
     display: none;
   }
-  /* c*/
-  main {
-    background: white;
 
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    
-    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-    box-shadow: 0px 20px 50px rgba(0, 0, 0, 80%);
-    border-radius: .6rem;
-    
-    width: min( 42.8rem, 90%);
+  /* configuração da main*/
+    main {
+      background: white;
 
-    margin-top: 16rem;
-    
-    text-align: center;
-    
-  }
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      
+      /*padding: 4.8rem 6.4rem 4.8rem 6.4rem;*/
+      box-shadow: 0px 20px 50px rgba(0, 0, 0, 80%);
+      border-radius: .6rem;
+      
+      width: min( 42.8rem, 90%);
 
-/* configuração screen 1 */
-  h1 {
-    margin-bottom: 1.4rem;
-    font-weight: 700;
-    font-size: 2.4rem;
-  }
+      margin-top: 16rem;
+      
+      text-align: center;
+      
+    }
 
-  p {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-  }
+    /* configuração screen 1 */
+      .screen1 {
+        padding: 4.8rem 6.4rem 4.8rem 6.4rem;
+      }
+      
+      h1 {
+        margin-bottom: 1.4rem;
+        font-weight: 700;
+        font-size: 2.4rem;
+      }
+      
+      p {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+      }
+      
+      img {
+        margin-top: 2rem;
+      }
 
-  img {
-    margin-top: 2rem;
-  }
+      /* animação do biscoito da sorte */
+      
+        /* tremor e balanço */
+          @keyframes shakeAndSwing {
+            0%, 100% { transform: translateX(0) rotate(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px) rotate(-5deg); }
+            20%, 40%, 60%, 80% { transform: translateX(5px) rotate(5deg); }
+          }
+      
+          .screen1 img:hover {
+            animation: shakeAndSwing 0.5s infinite;
+          }
 
-/* configuração screen 2*/
+    /* configuração screen 2*/
 
-  h2 {
-    font-weight: 700;
-    font-size: 2.4rem;
-  }
+        .screen2 {
+          padding: 4.8rem 6.4rem 4.8rem 6.4rem;
+        }
 
-  .screen2 p {
-    font-family: "Dancing Script", cursive;
-    font-weight: 400;
-    font-size: 2.4rem;
-    
-    background-color: #E4EDF1;
-    color: black;
-    
-    padding: 1rem;
-  }
-  
-  button {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 700;
-    font-size: 1.6rem;
+        h2 {
+          font-weight: 700;
+          font-size: 2.4rem;
+        }
 
-    background: #FF9500;
-    color: white;
-    border: none;
-    border-radius: 4px;
+        .screen2 p {
+          font-family: "Dancing Script", cursive;
+          font-weight: 400;
+          font-size: 2.4rem;
+          
+          background-color: #E4EDF1;
+          box-shadow: 2px 2px 2px rgba(85, 85, 85, 50%);
 
-    margin-top:1.7rem;
-    padding: 1.6rem;
-    
-  }
+          color: black;
+          
+          margin-top: 1.8rem;
+          padding: 1rem;
+
+          opacity: 0; /* Inicialmente escondido */
+          transform: translateY(-20px) scale(0.8); /* Deslocado para cima e menor */
+          animation: expandAndAppear 2s forwards; /* Aplicar a animação */
+        }
+        
+        /* Animação de expansão e surgimento */
+          @keyframes expandAndAppear {
+            0% {
+              opacity: 0;
+              transform: translateY(50%) scale(0.5);
+            }
+            50% {
+              opacity: 1;
+              transform: translateY(-20%) scale(1.1);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0) scale(1);
+            }
+          }
+        
+          button {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-size: 1.6rem;
+
+            background: #FF9500;
+            color: white;
+            border: none;
+            border-radius: 4px;
+
+            margin-top:1.7rem;
+            padding: 1.6rem;
+          }
+
+          button:hover {
+            background: #ff8502;
+          }
+          
+
+            
+        
 
