@@ -12,18 +12,23 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Dancing+Script&family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">  </head>
   <body>
     <main>
-      <div class="screen1 hide">
+      <div class="screen1">
         <h1>Qual é a sua sorte de hoje?</h1>
         <p>Abra o biscoito e descubra!</p>
-        <img src="./assests/fortune-cookie.svg" alt="imagem de biscoito da sorte">
+        <img id="fortuneImage" src="./assests/fortune-cookie.svg" alt="imagem de biscoito da sorte">
       </div>
 
-      <div class="screen2">
+      <div class="screen2 hide">
         <h1>Aqui está a sua sorte de hoje:</h1>
-        <p>Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.</p>
+        <p></p>
         <img src="./assests/OpenedFortuneCookie.svg" alt="imagem do biscoito da sorte aberto">
-        <button>Abrir outro biscoito</button>
+        
+        <form>
+          <button>Abrir outro biscoito</button>
+        </form>
       </div>
     </main>
+
+    <script src="./main.js"></script>
   </body>
 </html>
