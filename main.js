@@ -25,7 +25,7 @@ const fortuneImage = document.getElementById('fortuneImage');
     "Se o 'modelo financeiro' que existe no seu subconsciente não estiver programado para o sucesso, nada que você aprenda, saiba ou faça terá grande importância.",
     "Não é o que não sabemos que nos impede de vencer, o nosso maior obstáculo é justamente o que já sabemos.",
     "Se você não nasceu sendo, treine até se tornar!",
-    "Observo meus pensamentos e só alimento àqueles que me fortalecem!" ,
+    "Observe seus pensamentos e só alimente àqueles que te fortalecem!" ,
     "Aquilo que você focaliza se expande!",
     "A vida é 10% o que acontece com você e 90% como você reage a isso.",
     "Dinheiro fácil é igual castelo de areia na praia,onda vem e leva!",
