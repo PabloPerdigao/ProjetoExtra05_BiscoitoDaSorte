@@ -1,6 +1,6 @@
 
 
-<h1 align="center">☘🥠Projeto Biscoito da sorte</h1>
+<h1 align="center">☘Projeto Biscoito da sorte🥠</h1>
 <br/>
 
 <p align="center">
